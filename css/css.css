@@ -1,0 +1,110 @@
+html,body {
+	margin:0;
+	margin-top:57px;
+	padding:0;
+/*
+	width:99%; 
+*/
+/*	height:99%;  needed for container min-height */
+	background:white;
+	font-family: sans-serif; 
+}
+a{
+	color:black;
+	text-decoration:none;
+/*
+	font-size:-20%; 
+*/
+}
+  
+
+#outer-wrap {
+margin:auto;
+width:1024px;
+/*
+background:red;
+*/
+}
+/*
+#header {
+
+}
+*/
+#header>hr{
+	margin-top:25px;
+	margin-bottom:30px;
+	margin-right:7px;
+}
+.letras_header{
+	color:#782121;
+	font-size:31px;
+/*
+	float:right;
+*/
+	padding-top:20px;
+/*
+	margin-right:40px;
+*/
+
+}
+hr { 
+	/* display: block; height: 1px;
+    border: 0; */
+    border-top: 1px solid #c47410;
+    /* margin: 1em 0; padding: 0; */
+}
+#nav, #footer {
+	color:#782121; /* color de los caracteres del footer y nav*/
+}
+#nav {
+	width:160px;
+	float:left;
+	margin-right:5px;
+	font-weight:bold;
+	cursor:pointer;
+
+}
+#IdIframe {
+	width:512px;
+	height:340px;
+	border:0px;
+	position:relative;
+	top:-9px;
+	text-align:justify;
+/*
+	float:right;
+*/
+
+}
+#IdIframe, .subnav{
+	background-color:#e6e6e6;
+}
+.subnav { /* Sub navegacion , el desplegable secundario */
+	/*margin-left:10px;*/
+	padding-left:15px;
+	padding-top:9px;
+	margin-bottom:25px;
+	font-weight:normal;
+	font-size:0.8em;
+	display:none;
+}
+.subnav>a:hover{
+	color: #c47410;
+/*
+	font-weight:bold;
+*/
+	
+}
+#footer {
+/*
+	margin-right:30px;
+*/
+	cursor:help;
+	margin-top:14px;
+/*
+ * 	TODO poner lo de .em para que esta letra sea un poco mas pequenia
+	font-size:21px; 
+*/
+}
+
+

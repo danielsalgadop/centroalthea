@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+<title>ALTHEA</title>
+<link rel="stylesheet" type="text/css" href="css/css2.css" />
+<script type="text/javascript" src="js/jquery1.7.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<!--
+mi clave google api maps api es esta : ABQIAAAACJXXPLkhTcoqhAyAifdC9xSP66p2keszkqaUdtZjmQpUAxpnjxSTDZ0KmwboLJ_KwX-bLiIUNT2w-g
+-->
+<!-- He borrado el modernizr.kk.js dejo esto para recordarlo, html5 en IE
+<script type="text/javascript" src="js/modernizr.custom.56199.js"></script>
+-->
+</head>
+<body>
+<div id="maincontainer">
+	<div id="header">
+		<a href="index.html"><img src="images/logo/Pantallazologo.png" border="0"></a>
+		 <span class="letras_header">Althea Psicolog&iacute;a y Desarrollo Humano</span>		 
+	</div> <!-- Cierro header -->
+	<div class="hr" style="width:760px;"></div>
+
+	<div id="contentwrapper">
+		<div id="contentcolumn">
+			<iframe src="contenido/inicio.html" name="nombreIframe" width="512" height="340" frameBorder="0">
+			</iframe>
+		</div>
+	</div>
+	<div id="leftcolumn">
+		<span   onclick="javascript:FadeQuien2('ALTHEA');">ALTHEA</span><br>
+		<div class="subnav" id="subnavALTHEA">
+<!--
+			<a href="#" onclick="javascript:CargadorIframe2('contenido/althea/quienes_somos.html');" >Quienes Somos</a><br>
+-->
+
+			<a href="#" onclick="javascript:CargadorIframe2('contenido/althea/quienes_somos.html');" >Quienes Somos</a><br>
+			<a href="#" onclick="javascript:CargadorIframe2('contenido/althea/equipo.html');" >Equipo</a><br>
+			<a href="#" onclick="javascript:CargadorIframe2('contenido/althea/filosofia_de_trabajo.html');">Filosof&iacute;a de trabajo</a>
+		</div>
+		<div class="hr"> </div>
+		<span   onclick="javascript:FadeQuien2('TERAPIA');">TERAPIA</span><br>
+		<div class="subnav" id="subnavTERAPIA">
+			<a href="#" onclick="javascript:CargadorIframe2('contenido/terapia/individual.html');" >Individual</a><br>
+			<a href="#" onclick="javascript:CargadorIframe2('contenido/terapia/grupal.html');" >Grupal</a><br>
+		</div>
+		<div class="hr"> </div>
+		<span  onclick="javascript:ReplegarTodos();CargadorIframe2('contenido/actividades/actividades_semanales.html');">
+													ACTIVIDADES SEMANALES
+		</span>
+		<div class="hr"> </div>
+			<!--	ALONSO alonso LAS 4 LINEAS DE AQUI ABAJO PONEN EL BOTON DE TALLERES -->
+
+		<span  onclick="javascript:ReplegarTodos();CargadorIframe2('contenido/talleres/talleres.html');">
+													TALLERES
+		</span>
+		<div class="hr"> </div>
+
+		<span>
+			<a href="#" onclick="javascript:ReplegarTodos();CargadorIframe2('contenido/4.centro/centro.html');" style="color:#782121";>
+																CENTRO	
+			</a>
+
+		</span>
+		<div class="hr"> </div>
+		<span   onclick="javascript:FadeQuien2('CONTACTO');">CONTACTO</span>
+		<div class="subnav" id="subnavCONTACTO">
+			<a href="#" onclick="javascript:CargadorIframe2('contenido/5.contacto/donde_estamos.html');" >Donde estamos</a><br>
+			<a href="#" onclick="javascript:CargadorIframe2('contenido/5.contacto/haznos_una_pregunta.html');" >Haznos una pregunta</a><br>
+		</div>
+	</div>
+	<div id="footer" >
+		<a href="#" onclick="javascript:ReplegarTodos();CargadorIframe2('contenido/4.centro/centro.html');">c/Toledo 104 1&ordm;B, 28005 Madrid</a><span title="un titulo"> - 657250775 - </span><a href="mailto:centroalthea@centroalthea.es"> centroalthea@centroalthea.es </a>
+	</div>
+</div> <!-- fin de <div id="outer-wrap"> -->
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+/*
+El CSS del IFRAME
+*/
+html,body {
+	margin:0;
+	padding:0;
+/*
+	background-color:red;
+*/
+/*
+	width:5120px;
+*/
+/*
+	overflow-x:visible;
+*/
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+body {
+	font-family: sans-serif; 
+	text-align:justify;
+}
+h3 {
+	font-size:1em;
+}
+/* El titulo de los iframes */
+.contenido_titulo { /* no funciona dentro de ../css.css */
+	position:fixed;
+/* 	color:#782121; */
+	color:white;
+	font-size:1.3em;
+	z-index:20;
+	right:30px;
+/*
+	padding-right:30px;
+	padding-top:55px;
+	text-align:right;
+*/
+}
+
+/* La info dentro de iframe, quitando la imagen de arriba*/
+.hueco_iframe_contenido {
+	height:65px;
+/*
+	position:relative;
+	top:55px;
+	overflow:hidden;
+*/
+/*
+	
+	overflow-x:hidden;
+	overflow-y:hidden;
+*/
+}
+
+
+p{
+	padding-left:12px;
+	padding-right:12px;
+}
+a{
+	color:green;
+	text-decoration:none;
+}
+/* para que la foto de contenido se mantenga con scroll */
+#foto{
+	position:fixed;
+	z-index:10;
+}
+/* Cambiar nombre a transporte_publico por algo estilo flotando a la derecha*/
+.transporte_publico img{  /* nombre heredado de donde_estamos.html */
+	width:20px;
+	
+}
+.transporte_publico{
+	float:right;
+	margin-right:30px;
+}
+ 

@@ -1,0 +1,8 @@
+#Header { text-align: center; margin: 0px auto; padding: 10px; border: 3px solid red; } 
+
+#Footer { margin: 0px auto; padding: 10px; text-align: center; border: 3px solid yellow; } 
+
+#Content { margin:10px 0 10px 205px; padding: 10px; border: 3px solid green; } 
+
+#Sidebar { float: left; width: 180px; padding: 3px; margin: 10px 0 10px 5px; border: 3px solid blue; }
+

@@ -1,0 +1,37 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css.css" />
+
+<style>
+.letras_flotantes{
+	z-index:10;
+	position:absolute;
+}
+div{
+	background-image:url('gota_en_flor_morada.jpg');
+	width:523px;
+	height:340px;
+}
+</style>
+<script type="text/javascript">
+// Alons, aqui abajo pones las palabras que apareceran, fijate las tildes lo "raro" que son
+var AltheaPalabras = new Array("Gestalt","Psicolog&iacute;a","Terapia");
+function JugeteandoConPalabras(){
+		var t=setTimeout("CambiarPalabra()",1500);
+}
+function CambiarPalabra(){
+	document.getElementById('id_palabra_flotante').innerHTML= AltheaPalabras[Math.floor(Math.random()*(AltheaPalabras.length))];	
+	JugeteandoConPalabras();
+}
+</script>
+
+</head>
+<body onload="javascript:JugeteandoConPalabras()">
+<!--
+ ESTO hay que ponerlo como un background de un div !!!!!
+-->
+<div>
+<span class="letras_flotantes" id="id_palabra_flotante"></span>
+</div>
+</body>
+</html>

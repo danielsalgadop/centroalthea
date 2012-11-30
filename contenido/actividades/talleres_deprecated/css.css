@@ -1,0 +1,25 @@
+  h1,td {
+            padding-left: 15px;
+        }
+       h1 {
+/*/        background-color:#782121;*/
+                color:blue;
+
+        
+        padding-bottom: 8px;
+        padding-top: 8px;
+       }
+       td {
+          background-color: red;
+        border-left-style: solid;
+/*  border-left-color: #782121;*/
+        border-bottom-style:solid;
+ /*/       border-bottom-color:#782121;*/
+        border-right-style:solid;
+  /*/      border-right-color: #782121;*/
+        
+        
+       }
+       b {
+        color: pink;
+       }

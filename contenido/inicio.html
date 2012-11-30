@@ -1,0 +1,69 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css.css" />
+<script type="text/javascript" src="../js/jquery1.7.js"></script>
+<style>
+.letras_flotantes{
+	z-index:10;
+	position:absolute;
+	color:#ffffff;
+}
+div{
+	background-image:url('gota_en_flor_morada.jpg');
+	width:523px;
+	height:340px;
+}
+</style>
+<script type="text/javascript">
+// Alons, aqui abajo pones las palabras que apareceran, fijate las tildes lo "raro" que son
+var AltheaPalabras = new Array("Gestalt","Psicolog&iacute;a","Terapia");
+function JugeteandoConPalabras(){
+		var t=setTimeout("CambiarPalabra()",3500);
+}
+function CambiarPalabra(){
+	var viejo = document.getElementById('id_palabra_flotante').innerHTML;
+	var nuevo = DamePalabraNueva();
+	function DamePalabraNueva(){
+		return(AltheaPalabras[Math.floor(Math.random()*(AltheaPalabras.length))]);
+	}
+	while (viejo == nuevo){
+		nuevo = DamePalabraNueva();
+	}
+	//	$('#id_palabra_flotante').fadeToggle('fast');
+		//viejo.fadeIn();
+		//document.getElementById('id_palabra_flotante').style.zIndex = -169;
+		$('#id_palabra_flotante').fadeOut('slow');
+			document.getElementById('id_palabra_flotante').innerHTML= nuevo;
+			
+			//console.log(" el viejo es "+viejo);
+			CambiarPosicion();
+			CambiarTamanio();
+			$('#id_palabra_flotante').fadeIn('slow');
+			//document.getElementById('id_palabra_flotante').style.zIndex = 1;
+			
+			
+
+	JugeteandoConPalabras();
+}
+
+function CambiarTamanio(){
+	document.getElementById('id_palabra_flotante').style.fontSize = (Math.floor(Math.random()*(50)))+20;
+}
+function CambiarPosicion(){
+	document.getElementById('id_palabra_flotante').style.margin=Math.floor(Math.random()*(180))+"px "+Math.floor(Math.random()*(260))+"px"; 
+}
+
+
+ 
+</script>
+
+</head>
+<body onload="javascript:CambiarPalabra()">
+<!--
+ ESTO hay que ponerlo como un background de un div !!!!!
+-->
+<div>
+<span class="letras_flotantes" id="id_palabra_flotante"></span>
+</div>
+</body>
+</html>

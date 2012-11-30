@@ -1,0 +1,15 @@
+<html xmlns=”http://www.w3.org/1999/xhtml”>
+<head>
+<script type=”text/javascript”>
+function changeURL(id){
+alert(id);
+newURL=”http:yahoo.com”;
+document.getElementById(id).src=newURL;
+}
+</script>
+</head>
+<body >
+<iframe id=”test” name=”testName” src="http://www.marca.com" style="width:100%;height:500px;"></iframe>
+<a href=”#” onclick=”changeURL(‘test’);”>dfdfd</a>
+</body>
+</html>
